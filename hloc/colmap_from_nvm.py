@@ -46,7 +46,7 @@ def read_nvm_model(
     with open(intrinsics_path, 'r') as f:
         raw_intrinsics = f.readlines()
 
-    logging.info(f'Reading {len(raw_intrinsics)} cameras...')
+    logging.info(f'Reading {len(raw_intrinsics)} cameras....')
     cameras = {}
     for intrinsics in raw_intrinsics:
         intrinsics = intrinsics.strip('\n').split(' ')
